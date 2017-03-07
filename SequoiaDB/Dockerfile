@@ -1,4 +1,5 @@
-FROM centos:7
+FROM centos/systemd
+
 MAINTAINER zhaolp <zhaoliping0736@foxmail.com>
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
