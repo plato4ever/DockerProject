@@ -15,4 +15,4 @@ COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 8080 11790 11800 11810 11820
-CMD ["/bin/sh"]
+CMD ["/usr/sbin/init"]
