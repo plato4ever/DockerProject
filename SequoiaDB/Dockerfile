@@ -8,5 +8,9 @@ RUN  echo -e "2\n1\ny\n\n\n${PASSWD}\n${PASSWD}\n\nY\n" |./sequoiadb-2.0-linux-x
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN echo "Asia/ShangHai" > /etc/timezone
+
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+
 EXPOSE 8080 11790 11800 11810 11820
 CMD ["mysqld"]
