@@ -5,7 +5,7 @@ FROM airdock/base:jessie
 MAINTAINER zhaoliping <zhaoliping0736@foxmail.com>
 
 USER root
-cd /tmp && \
+RUN cd /tmp && \
     curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://www.gzvit.com/download/ibmjdk.tar.gz"
 RUN mkdir -p /usr/local/jdk
 RUN tar -xvf ibmjdk.tar.gz -C /usr/local/jdk
