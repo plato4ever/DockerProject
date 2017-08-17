@@ -5,7 +5,7 @@ FROM alpine:3.5
 MAINTAINER zhaoliping <zhaoliping0736@foxmail.com>
 
 USER root
-ADD ibmjdk.tar.gz
+RUN wget http://www.gzvit.com/download/ibmjdk1.8.tar.gz
 RUN tar -xvf ibmjdk.tar.gz -C /usr/local/jdk
 
 ## Set JAVA_HOME environment
