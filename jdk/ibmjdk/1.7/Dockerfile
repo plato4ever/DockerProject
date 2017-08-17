@@ -5,7 +5,8 @@ FROM airdock/base:jessie
 MAINTAINER zhaoliping <zhaoliping0736@foxmail.com>
 
 USER root
-RUN wget http://www.gzvit.com/download/ibmjdk.tar.gz
+cd /tmp && \
+    curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://www.gzvit.com/download/ibmjdk.tar.gz"
 RUN mkdir -p /usr/local/jdk
 RUN tar -xvf ibmjdk.tar.gz -C /usr/local/jdk
 RUN rm -rf ibmjdk.tar.gz
