@@ -8,8 +8,8 @@ USER root
 RUN cd /tmp && \
     curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://www.gzvit.com/download/ibmjdk.tar.gz"
 RUN mkdir -p /usr/local/jdk
-RUN tar -xvf ibmjdk.tar.gz -C /usr/local/jdk
-RUN rm -rf ibmjdk.tar.gz
+RUN tar -xvf /tmp/ibmjdk.tar.gz -C /usr/local/jdk
+RUN rm -rf /tmp/ibmjdk.tar.gz
 ## Set JAVA_HOME environment
 ENV JAVA_HOME /usr/local/jdk/ibmjdk
 ENV PATH ${PATH}:${JAVA_HOME}/bin
