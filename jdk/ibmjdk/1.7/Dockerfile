@@ -1,6 +1,6 @@
 ## Alpine Linux with ibmjdk1.7
 
-FROM alpine:3.5
+FROM airdock/base:jessie
 
 MAINTAINER zhaoliping <zhaoliping0736@foxmail.com>
 
