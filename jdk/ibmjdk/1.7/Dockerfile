@@ -6,7 +6,7 @@ MAINTAINER zhaoliping <zhaoliping0736@foxmail.com>
 
 USER root
 RUN wget http://www.gzvit.com/download/ibmjdk.tar.gz
-RUM mkdir -p /usr/local/jdk
+RUN mkdir -p /usr/local/jdk
 RUN tar -xvf ibmjdk.tar.gz -C /usr/local/jdk
 
 ## Set JAVA_HOME environment
