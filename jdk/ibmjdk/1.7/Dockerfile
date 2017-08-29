@@ -1,12 +1,12 @@
 ## Alpine Linux with ibmjdk1.7
 
-FROM ubuntu
+FROM airdock/base:jessie
 
 MAINTAINER zhaoliping <zhaoliping0736@foxmail.com>
 
 USER root
 RUN cd /tmp && \
-    wget http://www.gzvit.com/download/ibmjdk.tar.gz && \
+    curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://www.gzvit.com/download/ibmjdk.tar.gz" && \
     mkdir -p /usr/local/jdk && \
     tar -xvf ibmjdk.tar.gz -C /usr/local/jdk && \
     rm -rf ibmjdk.tar.gz
