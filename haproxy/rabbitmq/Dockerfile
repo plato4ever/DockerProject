@@ -1,4 +1,4 @@
-FROM haproxy:1.7
+FROM haproxy:1.7.9-alpine
 MAINTAINER zhaolp <zhaoliping0736@foxmail.com>
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
