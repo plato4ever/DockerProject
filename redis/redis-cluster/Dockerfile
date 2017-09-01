@@ -1,4 +1,4 @@
-FROM redis:4-alpine
+FROM redis
 MAINTAINER zhaolp <zhaoliping0736@foxmail.com>
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
