@@ -1,4 +1,4 @@
-FROM debian:jessie-slim
+FROM ruby
 
 MAINTAINER zhaolp <zhaoliping0736@foxmail.com>
 
