@@ -25,7 +25,6 @@ RUN set -ex; \
 	chmod +x /usr/local/bin/gosu; \
 	gosu nobody true; \
 	\
-  apt-get install -y ruby;\
 	apt-get purge -y --auto-remove $fetchDeps; \
   ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime; \
   echo "Asia/ShangHai" > /etc/timezone
